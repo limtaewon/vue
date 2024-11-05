@@ -6,6 +6,8 @@ import { RouterLink, RouterView } from 'vue-router'
   <header>
     <div class="wrapper">
       <nav>
+        <RouterLink to="/reactive">반응형 기초1</RouterLink>
+        <RouterLink to="/reactive2">반응형 기초2</RouterLink>
         <RouterLink to="/computed">계산된 속성</RouterLink>
       </nav>
     </div>
