@@ -6,6 +6,7 @@ import { RouterLink, RouterView } from 'vue-router'
   <header>
     <div class="wrapper">
       <nav>
+        <RouterLink to="/binding">클래스 스타일 바인딩</RouterLink>
       </nav>
     </div>
   </header>

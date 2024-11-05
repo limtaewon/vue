@@ -8,6 +8,11 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: HomeView,
+    },
+    {
+      path: '/binding',
+      name: 'binding',
+      component: import('../views/Binding.vue')
     }
   ],
 })
