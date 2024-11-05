@@ -1,35 +1,25 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
   <header>
-    <img
-      alt="Vue logo"
-      class="logo"
-      src="@/assets/logo.svg"
-      width="125"
-      height="125"
-    />
-
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
       <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/computed">계산된 속성</RouterLink>
       </nav>
     </div>
   </header>
-
-  <RouterView />
+  <div class="view-section">
+    <RouterView />
+  </div>
 </template>
 
 <style scoped>
 header {
   line-height: 1.5;
   max-height: 100vh;
+  min-width:300px;
 }
 
 .logo {
@@ -61,7 +51,9 @@ nav a {
 nav a:first-of-type {
   border: 0;
 }
-
+.view-section {
+  width: 100%;
+}
 @media (min-width: 1024px) {
   header {
     display: flex;
@@ -77,12 +69,13 @@ nav a:first-of-type {
     display: flex;
     place-items: flex-start;
     flex-wrap: wrap;
+    width: 300px;
   }
 
   nav {
     text-align: left;
     margin-left: -1rem;
-    font-size: 1rem;
+    font-size: 2rem;
 
     padding: 1rem 0;
     margin-top: 1rem;
