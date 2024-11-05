@@ -8,21 +8,6 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: HomeView,
-    },
-    {
-      path: '/reactive',
-      name: 'reactive',
-      component: () => import('../views/Reactive.vue'),
-    },
-    {
-      path: '/reactive2',
-      name: 'reactive2',
-      component: () => import('../views/Reactive2.vue'),
-    },
-    {
-      path: '/computed',
-      name: 'computed',
-      component: () => import('../views/Computed.vue')
     }
   ],
 })
