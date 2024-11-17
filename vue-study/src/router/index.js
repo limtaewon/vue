@@ -23,6 +23,11 @@ const router = createRouter({
       path: '/computed',
       name: 'computed',
       component: () => import('../views/Computed.vue')
+    },
+    {
+      path: '/binding',
+      name: 'binding',
+      component: import('../views/Binding.vue')
     }
   ],
 })
